@@ -257,7 +257,7 @@ And you should see that ANKRD11 is still number 2.
 
 ![image6](https://user-images.githubusercontent.com/6568964/84211809-3afba300-aa8a-11ea-8674-89518b0f8576.png)
 
-### 3. Run ClinPhen
+### 4. Run ClinPhen
 
 ClinPhen is another tool to analyze clinical notes. To run this tool, 
 1. Go to Terminal and run the commands below to install it.
@@ -298,7 +298,7 @@ You will get the results from ClinPhen. You can also type `clinphen --help` if y
 
 To find candidate genes for this set of HPO terms, you can input `HP:0012471;HP:0000574;HP:0000455;HP:0000322;HP:0002263;HP:0001250;HP:0030084` into Phen2Gene web server.
 
-### 4. Running AMELIE
+### 5. Running AMELIE
 
 [AMELIE](https://amelie.stanford.edu/) is yet another tool for analyzing clinical notes, however it requires a candidate gene list.  We put the real causal gene in a algorithm-allowed maximum 1000 gene list of random exome capture genes.
 
@@ -328,7 +328,7 @@ After the wheel is done spinning your results should look like the following:
 
 The number 1 gene, TAF1 is the correct causal gene.  But Phen2Gene gets the same result.
 
-### 5. Running PhenCards
+### 6. Running PhenCards
 
 Go to https://phencards.org/.  Click on the tab `Patient notes`:
 
@@ -360,7 +360,7 @@ The expected results are shown below in Phen2Gene server:
 
 ![image](https://user-images.githubusercontent.com/5926328/173100269-d316d071-c96e-46d4-b28e-9c479ceb7e9c.png)
 
-### 6. Filtering ANNOVAR annotation results based on Phen2Gene output
+### 7. Filtering ANNOVAR annotation results based on Phen2Gene output
 Now that we performed variant annotation in exercise1, and performed phenotype-based gene prioritization in exercise2, we want to see how to infer and prioritize candidate genes for the disease.
 
 Go to Console, we can run
@@ -387,7 +387,7 @@ The analytical logic in the above command is that: first we take only exonic var
 
 ![image](https://user-images.githubusercontent.com/11565618/173124914-4cc9f913-c265-4153-ba8c-16d7ec66f716.png)
 
-### 7. Running Phenomizer
+### 8. Running Phenomizer
 
 [Phenomizer](https://compbio.charite.de/phenomizer/) is another a web-based application for clinical diagnostics in human genetics using semantic similarity searches in ontologies.
 
@@ -425,7 +425,7 @@ You should see that KBG syndrome is among the top disease list
 ![image](https://user-images.githubusercontent.com/11565618/173252307-b87b7b5a-5de9-483a-a29c-d735a0760d09.png)
 
 
-### 8. Summary of the phenotype analysis exercises
+### 9. Summary of the phenotype analysis exercises
 
 In summary, a number of computational tools such as Phen2Gene, AMELIE and GADO can perform phenotype-driven gene prioritization. Phen2Gene provides webserver or API, or you can install and run locally (which is important to deploy it in batch processing mode), and it does not require a list of random genes to run either.
 
