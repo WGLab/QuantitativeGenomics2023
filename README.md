@@ -424,15 +424,16 @@ You should see that KBG syndrome is among the top disease list
 
 ![image](https://user-images.githubusercontent.com/11565618/173252307-b87b7b5a-5de9-483a-a29c-d735a0760d09.png)
 
-### 9. OARD
-## <img src="./public/OARD_logo.png" width="50"> OARD (An acronym form of ["oh alright"](https://www.urbandictionary.com/define.php?term=oard)): an **O**pen real-world based **A**nnotation for **R**are **D**iseases and its associated phenotypes
+### 9. Running OARD
+OARD (An acronym form of ["oh alright"](https://www.urbandictionary.com/define.php?term=oard)) is an **O**pen real-world based **A**nnotation for **R**are **D**iseases and its associated phenotypes.
 
 
 This is a React web app to serve the web app of OARD. The backend is provided by OARD API. Currently it is hosted on the 
 [NCATS AWS server (https://rare.cohd.io/)](https://rare.cohd.io/). This repo currenly only have the React web app part. The backend Flask API is hosted in another [repo](https://github.com/stormliucong/cohd-rare). We expect to merge two repos in the near future.
 
 ## An overview of OARD project
-![overview](overview.png)
+![overview](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/5f66b09e-314e-44fe-b250-33f6d849881e)
+
 
 ## How to use OARD
 - [Use web app](./tutorial)
