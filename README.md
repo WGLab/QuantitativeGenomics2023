@@ -438,7 +438,7 @@ This is a React web app to serve the web app of OARD. The backend is provided by
 
 ### 1. Using OARD web app
 
-Go to https://phen2gene.wglab.org.  Click on the tab `Patient notes`:
+Go to https://rare.cohd.io/.  Click on the tab `Patient notes`:
 
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/717aa262-2915-43b7-b11c-2d48e354e8ac)
 
