@@ -440,15 +440,15 @@ This is a React web app to serve the web app of OARD. The backend is provided by
 
 Go to https://rare.cohd.io/.  Click on the tab `Patient notes`:
 
-![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/717aa262-2915-43b7-b11c-2d48e354e8ac)
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/54bb9097-2d4d-46a2-96b7-8004b09b9d07)
 
 and select Method as mostFrequency and Domain as Disease to view most frequently occurred disease concept in a dataset:
 
-![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/c83596ee-00a3-4cf4-90ec-eea1e95c8fdd)
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/8e6a4c0a-3c30-42ab-9403-1effedf34b98)
 
 Then click Submit.
 
-![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/9e757f60-c572-4270-a166-eb757079f19e)
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/3585019f-7ec4-4622-9e70-7367f953cce1)
 
 ### 2. Using OARD API
 1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output.txt` where you generate JSON output in `output.txt`
