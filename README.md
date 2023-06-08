@@ -174,7 +174,9 @@ Phen2Gene is a phenotype-based gene prioritization tool from HPO IDs or clinical
 
 We will do the exercise in a directory called `exercise2`. In the terminal, assuming that you are currently in the `exercise1` directory (you can use `pwd` to check this), you can use command `cd ../exercise2` to go into the exercise2 directory.
 
-There are three ways to run Phen2Gene: download and run it locally (need a few GB of space), using API and using Phen2Gene website.
+There are three ways to run Phen2Gene: download and run it locally (need a few GB of space), using 
+
+and using Phen2Gene website.
 
 The benefit of running Phen2Gene is if you do not have any idea of a candidate gene for your disease, you can use it in one of three scenarios:
 
@@ -429,27 +431,46 @@ OARD (An acronym form of ["oh alright"](https://www.urbandictionary.com/define.p
 
 
 This is a React web app to serve the web app of OARD. The backend is provided by OARD API. Currently it is hosted on the 
-[NCATS AWS server (https://rare.cohd.io/)](https://rare.cohd.io/). This repo currenly only have the React web app part. The backend Flask API is hosted in another [repo](https://github.com/stormliucong/cohd-rare). We expect to merge two repos in the near future.
+[NCATS AWS server (https://rare.cohd.io/)](https://rare.cohd.io/).
 
 ## An overview of OARD project
 ![overview](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/5f66b09e-314e-44fe-b250-33f6d849881e)
 
+### 1. Using OARD web app
 
-## How to use OARD
-- [Use web app](./tutorial)
-- [Use API ](https://rare.cohd.io/api)
+Go to https://phen2gene.wglab.org.  Click on the tab `Patient notes`:
 
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/717aa262-2915-43b7-b11c-2d48e354e8ac)
 
+and select Method as mostFrequency and Domain as Disease to view most frequently occurred disease concept in a dataset:
 
-## How to setup OARD
-I followed this [article](https://blog.miguelgrinberg.com/post/how-to-deploy-a-react--flask-project) to setup up OARD as a flask API + React web app. 
-### 1. Requirement
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/c83596ee-00a3-4cf4-90ec-eea1e95c8fdd)
 
-You need to install three packages on your machine:
-* [Npm](https://docs.npmjs.com/) : The package manager for the Node JavaScript platform. 
-* [Node.js](https://nodejs.org/en/): The JavaScript runtime that you will use to run your frontend project.
-* You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine.
-* [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable): A package and project manager for Node.js applications.
+Then click Submit.
+
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/9e757f60-c572-4270-a166-eb757079f19e)
+
+### 2. Using OARD API
+1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" | tail -n 1 > output.txt`
+where you generate JSON output in `output.txt`
+However, since the `output.txt` file is in JSON format, it is not very intuitive to view the content of the file. Instead, we will use the table browser in Rstudio to view a formatted version of the JSON file.
+
+2. Go To Console, remember that we are probably in the `exercise1` directory, so we should first set `exercise2` as the working directory.
+```
+setwd("../exercise2")
+```
+3. Then we can run
+```
+library("rjson")
+# Read JSON results
+result <- fromJSON(file = "output.txt")
+# Convert them to array and name columns.
+marray <- t(array( unlist(result$results), dim=c(7, length(result$results)) ) );
+colnames(marray) <- names(result$results[[1]]);
+# View the results in 2-D array. The second column is the rank of genes.
+View (marray);
+```
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/b7fb940c-a410-4310-803f-464057aa003d)
 
 ### 9. Summary of the phenotype analysis exercises
 
