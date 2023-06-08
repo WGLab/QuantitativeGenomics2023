@@ -8,7 +8,7 @@ Students need to go to [Posit Cloud](https://posit.cloud/) to create your own ac
 1. click 'Sign up' on the top-right corner
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/6cbaa160-c984-46eb-8960-8783d3a84a37)
 
-2. select "Free" and click "Sign up" at the bottom-right corner. 
+2. select "Free" and click "Sign up" at the right panel. 
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/e681015d-7d7c-4bce-a766-936f78b56d63)
 
 3. After you input your information, click "Sign up". 
