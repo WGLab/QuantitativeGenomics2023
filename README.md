@@ -434,7 +434,7 @@ This is a React web app to serve the web app of OARD. The backend is provided by
 [NCATS AWS server (https://rare.cohd.io/)](https://rare.cohd.io/).
 
 ## An overview of OARD project
-![overview](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/5f66b09e-314e-44fe-b250-33f6d849881e)
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/477c471c-a9e8-434b-b187-68993b122e3b)
 
 ### 1. Using OARD web app
 
