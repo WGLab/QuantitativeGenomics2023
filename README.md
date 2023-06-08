@@ -469,7 +469,7 @@ colnames(marray) <- names(result$results[[1]]);
 # View the results in 2-D array. The second column is the rank of genes.
 View (marray);
 ```
-![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/b7fb940c-a410-4310-803f-464057aa003d)
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/a27c7a6d-c436-4384-8bbd-13b42df189d6)
 
 ### 9. Summary of the phenotype analysis exercises
 
