@@ -451,8 +451,7 @@ Then click Submit.
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/9e757f60-c572-4270-a166-eb757079f19e)
 
 ### 2. Using OARD API
-1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" | tail -n 1 > output.txt`
-where you generate JSON output in `output.txt`
+1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output.txt` where you generate JSON output in `output.txt`
 However, since the `output.txt` file is in JSON format, it is not very intuitive to view the content of the file. Instead, we will use the table browser in Rstudio to view a formatted version of the JSON file.
 
 2. Go To Console, remember that we are probably in the `exercise1` directory, so we should first set `exercise2` as the working directory.
