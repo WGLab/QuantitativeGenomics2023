@@ -4,8 +4,10 @@ This repository contains the course materials for hands-on exercise of the "Vari
 # Preparation of computing environment
 Both the lectures and hands-on exercises will be taught via Zoom video conference online. To ensure the cross-platform compatibility, we will only use Rstudio Cloud to implement tools that are developed in Perl and Python.
 
-Students need to go to [RStudio Cloud](https://rstudio.cloud/) to create your own account before the lectures: 
+Students need to go to [Posit Cloud](https://posit.cloud/) to create your own account before the lectures: 
 1. click 'Sign up' on the top-right corner
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/6cbaa160-c984-46eb-8960-8783d3a84a37)
+
 <img src="https://user-images.githubusercontent.com/16017780/122824588-de42e300-d2ae-11eb-8999-3775f83568ef.png" width="400" height="200">
 
 2. select "Free" and click "Sign up" at the bottom-right corner. 
