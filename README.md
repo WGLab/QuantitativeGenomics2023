@@ -438,17 +438,26 @@ This is a React web app to serve the web app of OARD. The backend is provided by
 
 ### 1. Using OARD web app
 
-Go to https://rare.cohd.io/.  Click on the tab `Patient notes`:
+Go to https://rare.cohd.io/.
 
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/54bb9097-2d4d-46a2-96b7-8004b09b9d07)
 
-and select Method as mostFrequency and Domain as Disease to view most frequently occurred disease concept in a dataset:
+Select Method as `mostFrequency` and Domain as `Disease` to view most frequently occurred disease concept in a dataset:
 
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/8e6a4c0a-3c30-42ab-9403-1effedf34b98)
 
-Then click Submit.
+Then click Submit:
 
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/3585019f-7ec4-4622-9e70-7367f953cce1)
+
+Type `HP:0012461` into Query Concept List 1 and select Method as `singleConceptFreq` and Dataset as `1-all` to view single concept frequency in a dataset:
+
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/0cd650f6-fba1-4221-b27b-89770574fade)
+
+Then click Submit:
+
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/dce7beb6-eea3-4ec4-9c1b-de1344e7ee39)
+
 
 ### 2. Using OARD API
 1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard1.txt` and `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard2.txt` where you generate JSON output in `output.txt`
@@ -478,7 +487,7 @@ View (marray2);
 ```
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/a27c7a6d-c436-4384-8bbd-13b42df189d6)
 
-### 9. Summary of the phenotype analysis exercises
+### 10. Summary of the phenotype analysis exercises
 
 In summary, a number of computational tools such as Phen2Gene, AMELIE and GADO can perform phenotype-driven gene prioritization. Phen2Gene provides webserver or API, or you can install and run locally (which is important to deploy it in batch processing mode), and it does not require a list of random genes to run either.
 
