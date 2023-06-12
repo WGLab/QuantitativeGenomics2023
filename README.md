@@ -451,7 +451,7 @@ Then click Submit.
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/3585019f-7ec4-4622-9e70-7367f953cce1)
 
 ### 2. Using OARD API
-1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output.txt` where you generate JSON output in `output.txt`
+1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard1.txt` and `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard2.txt` where you generate JSON output in `output.txt`
 However, since the `output.txt` file is in JSON format, it is not very intuitive to view the content of the file. Instead, we will use the table browser in Rstudio to view a formatted version of the JSON file.
 
 2. Go To Console, remember that we are probably in the `exercise1` directory, so we should first set `exercise2` as the working directory.
@@ -462,12 +462,19 @@ setwd("../exercise2")
 ```
 library("rjson")
 # Read JSON results
-result <- fromJSON(file = "output.txt")
+result1 <- fromJSON(file = "output_oard1.txt")
 # Convert them to array and name columns.
-marray <- t(array( unlist(result$results), dim=c(7, length(result$results)) ) );
-colnames(marray) <- names(result$results[[1]]);
+marray1 <- t(array( unlist(result1$results), dim=c(7, length(result1$results)) ) );
+colnames(marray1) <- names(result1$results[[1]]);
 # View the results in 2-D array. The second column is the rank of genes.
-View (marray);
+View (marray1);
+
+result2 <- fromJSON(file = "output_oard2.txt")
+# Convert them to array and name columns.
+marray2 <- t(array( unlist(result2$results), dim=c(7, length(result2$results)) ) );
+colnames(marray2) <- names(result2$results[[1]]);
+# View the results in 2-D array. The second column is the rank of genes.
+View (marray2);
 ```
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/a27c7a6d-c436-4384-8bbd-13b42df189d6)
 
