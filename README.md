@@ -487,17 +487,32 @@ result1 <- fromJSON(file = "output_oard1.txt")
 # Convert them to array and name columns.
 marray1 <- t(array( unlist(result1$results), dim=c(7, length(result1$results)) ) );
 colnames(marray1) <- names(result1$results[[1]]);
-# View the results in 2-D array. The second column is the rank of genes.
+# View the results in 2-D array.
 View (marray1);
+```
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/a27c7a6d-c436-4384-8bbd-13b42df189d6)
 
+```
 result2 <- fromJSON(file = "output_oard2.txt")
 # Convert them to array and name columns.
 marray2 <- t(array( unlist(result2$results), dim=c(7, length(result2$results)) ) );
 colnames(marray2) <- names(result2$results[[1]]);
-# View the results in 2-D array. The second column is the rank of genes.
+# View the results in 2-D array.
 View (marray2);
 ```
-![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/a27c7a6d-c436-4384-8bbd-13b42df189d6)
+
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/0f3f0348-185e-43d5-81d9-4aeda0377c2b)
+
+```
+result3 <- fromJSON(file = "output_oard3.txt")
+# Convert them to array and name columns.
+marray3 <- t(array( unlist(result3$results), dim=c(14, length(result3$results)) ) );
+colnames(marray3) <- names(result3$results[[1]]);
+# View the results in 2-D array.
+View (marray3);
+```
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/b676bcaf-3eb6-475a-9ec3-63fd0879bf26)
+
 
 ### 10. Summary of the phenotype analysis exercises
 
