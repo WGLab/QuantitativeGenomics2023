@@ -458,9 +458,21 @@ Then click Submit:
 
 ![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/dce7beb6-eea3-4ec4-9c1b-de1344e7ee39)
 
+Type `HP:0012461` into Query Concept List 1 and `HP:0500111` into Query Concept List 2 and select Method as `pairConceptFreq` and Dataset as `1-all` to view pair concept frequency in a dataset:
+
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/11565618/71f74440-013c-492a-b33c-f95baceca9f2)
+
 
 ### 2. Using OARD API
-1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard1.txt` and `curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard2.txt` where you generate JSON output in `output.txt`
+1. Go to Terminal, make sure you are in the `exercise2` directory first, and run 
+
+`curl "https://rare.cohd.io/api/frequencies/mostFrequency?dataset_id=2&domain_id=diseases" > output_oard1.txt`
+
+`curl "https://rare.cohd.io/api/frequencies/singleConceptFreq?dataset_id=1&concept_id=90012461" > output_oard2.txt`
+
+`curl "https://rare.cohd.io/api/frequencies/pairedConceptFreq?dataset_id=1&concept_id_1=90012461&concept_id_2=90500111" > output_oard3.txt` 
+
+where you generate JSON outputs.
 However, since the `output.txt` file is in JSON format, it is not very intuitive to view the content of the file. Instead, we will use the table browser in Rstudio to view a formatted version of the JSON file.
 
 2. Go To Console, remember that we are probably in the `exercise1` directory, so we should first set `exercise2` as the working directory.
