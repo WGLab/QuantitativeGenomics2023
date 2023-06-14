@@ -116,7 +116,6 @@ Check variant distribution across chromesomes:
 res <- read.table("proband.annovar.hg19_multianno.txt", fill=T, header=T, sep="\t", na.strings = ".")
 
 #visualize variant frequency
-attach(mtcars)
 par(mar=c(5.1, 4.1, 4.1, 2.1),mfrow=c(1,1))
 table <- table(res$Chr)
 chrlist <- paste0("chr",1:22)
