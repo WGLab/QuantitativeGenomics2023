@@ -14,9 +14,9 @@ Students need to go to [Posit Cloud](https://posit.cloud/) to create your own ac
 3. After you input your information, click "Sign up". 
 <img src="https://user-images.githubusercontent.com/16017780/122824633-f0248600-d2ae-11eb-9bd1-a72b8f03383b.png" width="200" height="300">
 
-If you logout after signing up, you can go to [RStudio Cloud](https://rstudio.cloud/) and login with your username and password. After you are added to "2023 Quantitative Genomics" project, you can click "Annotation_Assignment" to start the exercise. The direct link is [here](https://rstudio.cloud/spaces/232505/content/4126775). 
+If you logout after signing up, you can go to [RStudio Cloud](https://rstudio.cloud/) and login with your username and password. After you are added to "2023 Quantitative Genomics" project, you can click "Annotation_Assignment" to start the exercise. The direct link is [here]([https://rstudio.cloud/spaces/232505/content/4126775](https://posit.cloud/spaces/369987/join?access_code=r9WCuFA3yq4ZYes6WUFr7KKHcdI12LDiYK9wsf7I)). 
 
-![image](https://user-images.githubusercontent.com/5926328/173241575-fa2b97b0-072e-4dc4-8876-d4ed33197ca5.png)
+![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/78e940c0-9858-450b-9bc4-c52ce8cdc054)
 
 When the student opens an assignment project, RStudio Cloud will automatically make a copy for them. In other words, each student will work on your own copy of the virtual machine without influencing each other's files.
 
