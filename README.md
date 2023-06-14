@@ -433,7 +433,7 @@ This is a React web app to serve the web app of OARD. The backend is provided by
 [NCATS AWS server (https://rare.cohd.io/)](https://rare.cohd.io/).
 
 ## An overview of OARD project
-![image](https://github.com/WGLab/QuantitativeGenomics2023/assets/5926328/477c471c-a9e8-434b-b187-68993b122e3b)
+open annotation for rare diseases (OARD), a real-world-data-derived resource with annotation for rare-disease-related phenotypes. This resource is derived from the EHRs of two academic health institutions containing more than 10 million individuals spanning wide age ranges and different disease subgroups. By leveraging ontology mapping and advanced natural-language-processing (NLP) methods, OARD automatically and efficiently extracts concepts for both rare diseases and their phenotypic traits from billing codes and lab tests as well as over 100 million clinical narratives. 
 
 ### 1. Using OARD web app
 
